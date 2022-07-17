@@ -1,0 +1,1211 @@
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{   
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+font-size: 62.5%;
+text-rendering: optimizeLegibility;
+
+color: white;
+background-color: rgb(248, 249, 250);
+
+}
+
+.row
+{
+    width: 114rem;
+    margin: auto;
+}
+
+section
+{
+    overflow: hidden;
+    padding: 5rem 0rem;
+}
+
+
+
+
+
+/***************************************/
+/**********Hero Section*****************/
+/***************************************/
+.hero-section
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(30, 35, 47,0.8),rgb(30, 35, 47,0.9)),url('../image/hero-bg.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-align: center;
+
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 98%);
+    
+}
+
+
+.hero-textbox
+{
+    width: 60%;
+    height: 50%;
+
+    position:absolute;
+    top: 1.8rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    margin: auto;
+}
+
+
+.hero-textbox h1
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 5.7rem;
+    font-weight: 800;
+}
+
+
+.hero-textbox .hero-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-top: 4rem;
+    font-weight: 400;
+}
+
+.hero-btn
+{
+    display: inline-block;
+    color: white;
+    margin-top: 3.4rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    background-color: rgb(226, 30, 81);
+}
+
+.hero-btn:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+.hero-arrow
+{
+    font-size: 3rem;
+    
+    position: absolute;
+    top: 35rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    margin: auto;
+
+    
+
+
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+@keyframes arrow
+{
+    0%
+    {
+       top: 35rem; 
+    }
+    
+    50%
+    {
+       top: 45rem; 
+    }
+    
+    100%
+    {
+       top: 35rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Navigation*****************/
+/***************************************/
+
+.navigation-background
+{
+    background-color: transparent !important;
+}
+
+.navigation-brand
+{
+    color: white;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-bottom: 0.2rem solid  rgb(226, 30, 81);
+}
+.navigation-brand:hover
+{
+    color: white;
+}
+
+
+.navigation-list
+{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: 1.5s;
+
+}
+
+.navigation-list:hover
+{
+    color: rgb(226, 30, 81);
+    border-bottom: 0.2rem solid  rgb(226, 30, 81);
+    
+}
+
+
+.navigation-background-scroll
+{
+    background-color: rgba(30, 35, 47, 0.493);
+    border-bottom: 0.1rem solid white;
+}
+
+
+/*************************************/
+/**********About Section***************/
+/*************************************/
+
+.grid-about
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem 4rem;
+    
+    
+}
+
+
+.mypic
+{
+    width: 80%;
+    
+    border:1rem solid rgb(226, 30, 81);
+    border-radius: 0.5rem;
+}
+
+.about-p1
+{
+    color: rgb(26, 32, 44);
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.3rem;
+}
+.grid-about h2
+{
+    color:rgb(226, 30, 81);
+    font-size: 2.8rem;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about-p2
+{
+    color: rgb(26, 32, 44);
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+
+.about-p5
+{
+    text-align: center;
+}
+.about-btn
+{
+    
+    display: inline-block;
+    
+    color: rgb(26, 32, 44);
+    margin-top: 5rem;
+    font-size: 2.3rem;
+    text-decoration: none;
+    padding: 0.7rem 5.6rem;
+    border: 0.1rem solid  rgb(226, 30, 81);
+    border-radius: 0.6rem;
+}
+
+.about-btn:hover
+{
+    background-color: rgb(226, 30, 81) ;
+    color: white;
+}
+
+
+
+
+
+
+/***************************************/
+/**********Skill Section************/
+/***************************************/
+.skill-section
+{
+    width: 100%;
+    
+    background-image: linear-gradient(rgba(227, 237, 244, 0.9),rgba(227, 237, 244, 0.9)),url('../image/skill-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    background-attachment: fixed;
+    clip-path: polygon(0 9%, 100% 3%, 100% 100%, 0% 100%);
+
+}
+
+.skill-section h2
+{
+    font-size: 2.4rem;
+    text-align: center;
+    color: rgb(26, 32, 44);  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.skill-section h2::after
+{
+    content: "";
+    display: block;
+    height:0.8rem;
+    background-color:#2B9B2B;
+    width:8.5rem;
+    margin: auto;
+    margin-top: 1.3rem; 
+    border-radius: 0.5rem;
+}
+
+.grid-skill
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+    grid-auto-rows: minmax(40rem,auto);
+    margin-top: 4rem;
+}
+
+.grid-skill tspan{
+    font-size: 1.3rem;
+}
+
+.grid-skill p{
+    color: rgb(26, 32, 44);
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+
+
+
+
+/*************************************/
+/**********Count Section***************/
+/*************************************/
+
+.count-section
+{
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.9)),url('../image/count-bg.jpg');
+    
+    background-size: cover;
+    background-position:  center center;
+    background-attachment: fixed;
+
+    text-align: center;
+    
+    
+}
+
+
+.grid-count
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem 4rem;
+    margin-top: 4rem;
+}
+
+
+.grid-count .col
+{
+    border: 0.1rem dotted  rgba(255, 255, 255, 0.623);
+    padding: 2.2rem 0rem;
+    
+}
+
+
+.count-section h2
+{
+    font-size: 2.4rem;
+    text-align: center;
+    color: #FFDE00; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.count-section h2::after
+{
+    content: "";
+    display: block;
+    height:0.8rem;
+    background-color:#FFDE00;
+    width:8.5rem;
+    margin: auto;
+    margin-top: 1.3rem; 
+    border-radius: 0.5rem;
+}
+
+.grid-count h1 
+{
+    font-size: 5.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFDE00;
+}
+
+.grid-count p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.count-icon
+{
+    color: #FFDE00;
+    font-size: 3rem;
+}
+
+
+
+
+/***************************************/
+/**********Project Section************/
+/***************************************/
+
+.project-section
+{
+    background-color: #e2e2f0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 83%, 0 100%);
+
+    padding-bottom: 15rem;
+}
+
+.grid-project
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem 4rem;
+    margin-top: 7rem;
+}
+
+.project-card-img
+{
+    width: 100%;
+}
+
+.project-section .project-title
+{
+    color:#E21E51 ;
+    font-size: 2.7rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0rem;
+    
+}
+
+.project-section h2
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.project-section h3
+{
+    color: #E21E51;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.project-card-title
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+.project-card-btn a
+{
+    display: inline-block;
+    color: white;
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0.7rem 1.6rem;
+    background-color: rgb(226, 30, 81) ;
+    text-align: center;
+}
+
+.project-card-btn
+{
+    text-align: center;
+}
+
+.project-card-btn a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+.grid-project .col
+{
+    padding: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 0.9rem #909094;
+    transition: 0.3s;
+}
+
+
+.grid-project .col:hover
+{
+    box-shadow: -0.3rem -0.3rem 0.9rem #909094;
+    transform: translatey(-5rem);
+}
+
+
+
+
+
+.all-project-btn 
+{
+    display: inline-block;
+    color: rgb(26, 32, 44);
+    margin-top: 5rem;
+    font-size: 2.3rem;
+    text-decoration: none;
+    padding: 0.7rem 5.6rem;
+    border: 0.1rem solid  rgb(226, 30, 81);
+    border-radius: 0.6rem;
+}
+
+
+.all-project-btn:hover
+{
+    background-color: rgb(226, 30, 81) ;
+    color: white;
+}
+
+
+
+/***************************************/
+/**********All Project Section************/
+/***************************************/
+
+
+
+.all-project-section
+{
+    background-color:#EFEFF5;
+
+
+    padding-bottom: 15rem;
+}
+
+.grid-all-project
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 6rem 4rem;
+    margin-top: 7rem;
+}
+
+.all-project-card-img
+{
+    width: 100%;
+}
+
+.all-project-section .all-project-title
+{
+    color:#E21E51 ;
+    font-size: 2.7rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0rem;
+    border-bottom: 0.2rem solid #E21E51;
+    
+}
+
+.all-project-section h2
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.all-project-section h3
+{
+    color: #E21E51;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.all-project-card-title
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+.all-project-card-btn a
+{
+    display: inline-block;
+    color: white;
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0.7rem 1.6rem;
+    background-color: rgb(226, 30, 81) ;
+    text-align: center;
+}
+
+.all-project-card-btn
+{
+    text-align: center;
+}
+
+.all-project-card-btn a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+.grid-all-project .col
+{
+    padding: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 0.9rem #909094;
+    transition: 0.3s;
+}
+
+
+.grid-all-project .col:hover
+{
+    box-shadow: -0.3rem -0.3rem 0.9rem #909094;
+    transform: translatey(-5rem);
+}
+
+
+
+
+
+
+
+/***************************************/
+/**********Certificate Section************/
+/***************************************/
+.certificate-section
+{
+    width: 100%;
+   
+    background-image: linear-gradient(rgb(239, 239, 245,0.8),rgb(239, 239, 245,0.7)),url('../image/certificate-bg.jpg');
+    
+    background-size: cover;
+    background-position: center;
+
+  
+
+    
+}
+
+
+.certificate-title
+{
+    color:#E21E51 ;
+    font-size: 2.7rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0rem;
+    border-bottom: 0.2rem solid #E21E51;
+}
+
+
+.certificate-section h2
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.my-certificate
+{
+    margin-top: 3rem;
+}
+
+.image-gallery-index
+{
+    font-size: 2rem;
+}
+
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg
+{
+    color: #1A202C;
+}
+
+
+.image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg
+{
+    color: #1a202c;
+}
+
+
+
+
+
+/***************************************/
+/**********Contact Section************/
+/***************************************/
+
+.grid-contact
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem 4rem;
+}
+
+.contact-section h2
+{
+    color: #1A202C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contact-title
+{
+    color:#E21E51 ;
+    font-size: 2.3rem;
+    word-spacing: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+
+.grid-contact form
+{
+   
+    background-color: #EFEFF5;
+    padding: 4rem;
+    border-radius: 1rem;
+    
+}
+
+
+.contact-name input
+{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    border:0rem;
+    padding: 0.9rem;
+    
+    
+}
+
+.contact-name input::placeholder
+{
+    color: #E21E51;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+}
+.contact-email input
+{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 3.7rem;
+    font-size: 1.6rem;
+    margin-top: 1.7rem;
+    border:0rem;
+    padding: 0.9rem;
+}
+.contact-email input::placeholder
+{
+    color: #E21E51;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+}
+
+.contact-msg textarea
+{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 20rem;
+    font-size: 1.6rem;
+    margin-top: 1.7rem;
+    border:0rem;
+    padding: 0.9rem;
+}
+
+.contact-msg textarea::placeholder
+{
+    color: #E21E51;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+}
+
+.contact-btn input
+{
+    display: inline-block;
+    color: white;
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0.8rem 1.7rem;
+    background-color: rgb(226, 30, 81) ;
+    border:0rem;
+}
+.contact-section marquee
+{
+    color:rgb(226, 30, 81) ;
+    font-size: 1.9rem;
+    margin-bottom: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+
+
+/***************************************/
+/**********Footer Section************/
+/***************************************/
+
+.footer-section
+{
+    background-color: #1A202C;
+    width: 100%;
+    height: 17vh;
+    
+}
+
+.footer-section p
+{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.footer-section p a
+{
+    color: rgb(226, 30, 81);
+    text-decoration: none;
+
+    border-top: 0.1rem solid rgb(226, 30, 81);
+    border-bottom: 0.1rem solid rgb(226, 30, 81);
+}
+
+
+
+/***************************************/
+/**********Every Page top Section************/
+/***************************************/
+
+.everyPageTop-section
+{
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(rgb(30, 35, 47,0.8),rgb(30, 35, 47,0.9)),url('../image/hero-bg.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-align: center;
+}
+
+.everyPageTop-section h2
+{
+    font-family:'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 8rem;
+    color: white;
+    padding: 2rem;
+
+    border-bottom: 0.2rem solid rgb(226, 30, 81);
+}
+
+
+
+
+/***************************************/
+/**********Every Page top Section************/
+/***************************************/
+
+.notFound-section
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(30, 35, 47,0.8),rgb(30, 35, 47,0.9)),url('../image/hero-bg.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-align: center;
+}
+
+.notFound-section h2
+{
+    font-family:'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 25rem;
+    color: white;
+    padding: 2rem;
+
+    border-bottom: 0.2rem solid rgb(226, 30, 81);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Responsive Design************/
+/***************************************/
+
+
+@media screen and (max-width:1200px)
+{
+    .row
+    {
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+    .hero-btn
+    {
+        margin-top: 2.3rem;
+    }
+
+    .hero-textbox .hero-description
+    {
+        font-size: 1.7rem;  
+        margin-top: 2rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:1024px)
+{
+    .hero-textbox h1
+    { 
+        font-size: 5rem;
+    }
+
+    .hero-textbox .hero-description
+    {
+        font-size: 1.5rem;  
+    }
+
+    .navigation-background
+    {
+        background-color: rgba(30, 35, 47, 0.493) !important;
+        text-align:center;
+    }
+
+    .navigation-background-scroll
+    {
+        text-align:center;
+    }
+
+    .skill-section h2
+    {
+        margin-top: 3rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px)
+{
+
+    .hero-textbox h1
+    { 
+        font-size: 4rem; 
+    }
+
+    .hero-textbox .hero-description
+    {
+        font-size: 1.5rem;  
+        margin-top: 2rem;
+    }
+
+    .hero-btn
+    {
+        margin-top: 2.1rem;
+    }
+
+    .grid-skill
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .grid-project
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 7rem 4rem;
+    }
+    .all-project-btn 
+    {
+        margin-bottom: 10rem;
+    }
+    .project-section
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 89%, 0 100%);
+    }
+
+    .grid-all-project
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 7rem 4rem;
+    }
+
+    .grid-contact
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .contact-title
+    {
+        margin-top: 3rem;
+    }
+    .contact-section h2
+    {
+        font-size: 3rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:616px)
+{
+
+    .hero-textbox
+    {
+        width: 60%;
+        height: 50%;
+
+        position:absolute;
+        top: 0rem;
+        bottom: 0rem;
+        left: 0rem;
+        right: 0rem;
+        margin: auto;
+    }
+
+    .hero-textbox h1
+    {
+        font-size: 3rem; 
+    }
+
+    .hero-textbox .hero-description
+    {
+        font-size: 1.4rem;  
+        margin-top: 1.5rem;
+    }
+
+    .hero-btn
+    {
+        margin-top: 1.5rem;
+    }
+
+    .grid-about
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .mypic
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .grid-count
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .grid-project
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 7rem 4rem;
+    }
+    .all-project-btn 
+    {
+        margin-bottom: 10rem;
+    }
+
+    .grid-all-project
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 7rem 4rem;
+    }
+
+    .certificate-section h2
+    {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:480px)
+{
+   
+    .grid-count
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+
+}
